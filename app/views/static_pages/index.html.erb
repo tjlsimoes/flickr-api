@@ -1,6 +1,14 @@
-<form action="/static_pages/index" method="get">
+<form action="/static_pages/" method="get">
 	<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+
 	<label for="user_id">Photos for:</label>
   <input id="search" name="user_id" type="text" />
+
   <input name="commit" type="submit" value="Search" data-disable-with="Search" />
 </form>
+<br>
+<% unless @photos.nil? %>
+	<% @photos.each do |photo| %>
+ 		<img src="https://live.staticflickr.com/<%= photo.server %>/<%= photo.id %>_<%= photo.secret %>.jpg"> 
+	<% end %>
+<% end %>
