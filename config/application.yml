@@ -1,0 +1,8 @@
+# Add configuration values here, as shown below.
+
+  flickr_api_key: d29c4bf02a837e1e5b7ec65b73b8b94a
+  flickr_secret: ade39efde5184c45
+#
+# production:
+#   stripe_api_key: sk_live_EeHnL644i6zo4Iyq4v1KdV9H
+#   stripe_publishable_key: pk_live_9lcthxpSIHbGwmdO941O1XVU
